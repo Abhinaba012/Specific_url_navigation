@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #FEBE10;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #00529F;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #00529F;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Real Madrid</h1>
+    </header>
+    <nav>
+        <a href="#history">History</a>
+        <a href="#team">Team</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="history">
+            <h2>History</h2>
+            <p>Real Madrid Club de Fútbol, commonly referred to as Real Madrid, is a professional football club based in
+                Madrid, Spain. Founded on March 6, 1902, the club has a long and illustrious history and is one of the
+                most successful football clubs in the world.</p>
+        </section>
+        <section id="team">
+            <h2>Team</h2>
+            <p>The current squad includes world-class players such as Vinicius Junior, Luka Modrić, and Thibaut Courtois.
+                The team is managed by Carlo Ancelotti, who returned to the club in 2021.</p>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <p>Real Madrid is one of the most successful clubs in football history, having won 35 La Liga titles, 20
+                Copa del Rey titles, and a record 15 UEFA Champions League titles, among other honors.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For more information, visit the official website: <a href="https://www.realmadrid.com" target="_blank"
+                    style="color: #00529F;">www.realmadrid.com</a></p>
+
+            <h2> <a href="{% url 'Manutd:manutd' %}">Click For Manchester United</a>
+                <br>
+                <a href="{% url 'Byern:byern' %}">click for Byern Munchen</a>
+            </h2>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Real Madrid
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester United</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #DA291C;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Manchester United</h1>
+    </header>
+    <nav>
+        <a href="#history">History</a>
+        <a href="#team">Team</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="history">
+            <h2>History</h2>
+            <p>Manchester United Football Club, commonly referred to as Man United or simply United, is a professional
+                football club based in Old Trafford, Greater Manchester, England. Founded in 1878 as Newton Heath LYR
+                F.C., the club changed its name to Manchester United in 1902.</p>
+        </section>
+        <section id="team">
+            <h2>Team</h2>
+            <p>The current squad includes world-class players such as Bruno Fernandes, Marcus Rashford, and David de
+                Gea. The team is managed by Erik ten Hag, who took over in 2022.</p>
+        </section>
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <p>Manchester United is one of the most successful clubs in English football. The club has won a record 20
+                league titles, 12 FA Cups, 5 League Cups, and 3 UEFA Champions League titles, among other honors.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For more information, visit the official website: <a href="https://www.manutd.com" target="_blank"
+                    style="color: #fff;">www.manutd.com</a></p>
+
+            <h2> <a href="{% url 'Real:real' %}">Click For Real Madrid</a>
+                <br>
+                <a href="{% url 'Byern:byern' %}">Click For Byern Munchen</a>
+            </h2>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Manchester United
+    </footer>
+</body>
+
+</html>
